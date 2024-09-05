@@ -128,12 +128,13 @@ a:focus {
 
 .features ul {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
 .features ul li {
     margin: 0px 30px;
+    width: 270px;
 }
 
 .features ul li h3 {
@@ -142,4 +143,28 @@ a:focus {
 
 .features ul li p {
     color: var(--light-text);
+    letter-spacing: 1px;
+}
+
+.wdwd {
+    margin: 94px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wdwd h2 {
+    font-size: 36px;
+    margin: 50px 0;
+}
+
+.wdwd .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.wdwd .images img {
+    width: 370px;
+    height: 294px;
 }
