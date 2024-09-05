@@ -72,7 +72,7 @@ a:focus {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 26px;
-    color: 000;
+    color: #000;
 
     .logoweb {
         color: var(--blue-color);
@@ -167,4 +167,83 @@ a:focus {
 .wdwd .images img {
     width: 370px;
     height: 294px;
+}
+
+.team {
+    height: 648px;
+    background-color: #f5f4fa;
+    margin-left: -215px;
+    margin-right: -215px;
+    padding: 94px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team h2 {
+    font-size: 36px;
+    margin: 50px 0px;
+}
+
+.team ul {
+    display: flex;
+    gap: 0 30px;
+}
+
+.team ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+.team ul li h5 {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+}
+.team ul li p {
+    color: var(--light-text);
+    margin: 10px 0 30px 0;
+}
+
+footer {
+    height: 252px;
+    background-color: var(--bg-color);
+    margin-left: -215px;
+    margin-right: -215px;
+    padding: 0 215px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer address span {
+    color: #fff;
+}
+footer a {
+    color: var(--light-text);
+}
+footer a:hover,
+footer a:focus {
+    color: var(--blue-color);
+}
+
+footer address {
+    font-style: normal;
+}
+
+.logow {
+    margin: 20px 0px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff;
+
+    .logoweb {
+        color: var(--blue-color);
+        font-size: 26px;
+    }
 }
