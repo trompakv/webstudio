@@ -49,37 +49,37 @@ a:focus {
     color: var(--blue-color);
 }
 
-.navlinks {
+.header-navigation_nav-links {
     margin: 0 0 0 93px;
     display: flex;
 }
 
-.navlinks li {
+.header-navigation_nav-links li {
     margin-right: 50px;
 }
 
-.navigation {
+.header-navigation {
     display: flex;
     align-items: center;
 }
 
-.contacts a {
+.header-contacts a {
     margin-left: 50px;
     color: var(--light-text);
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.header-contacts a:hover,
+.header-contacts a:focus {
     color: var(--blue-color);
 }
 
-.logo {
+.header-navigation_logo {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 26px;
     color: #000;
 
-    .logoweb {
+    .footer-logoweb {
         color: var(--blue-color);
         font-size: 26px;
     }
@@ -202,7 +202,7 @@ footer address {
     font-style: normal;
 }
 
-.logow {
+.footer-logow {
     margin: 20px 0px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;

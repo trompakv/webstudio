@@ -24,7 +24,7 @@ body {
     font-family: "Roboto", sans-serif;
     align-items: center;
     justify-content: center;
-    padding: 0 215px;
+    margin: 0 215px;
 }
 
 header {
@@ -102,8 +102,12 @@ a:focus {
     color: #fff;
     text-transform: uppercase;
     width: 696px;
-    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
     font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 .main-section1 button {
@@ -135,6 +139,7 @@ a:focus {
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    width: 1170px;
 }
 
 .main-features ul li {
@@ -144,11 +149,18 @@ a:focus {
 
 .main-features ul li h3 {
     color: var(--text-color);
+    margin-bottom: 10px;
 }
 
 .main-features ul li p {
     color: var(--light-text);
-    letter-spacing: 1px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    width: 270px;
 }
 
 .main-features-wdwd {
