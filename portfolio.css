@@ -19,21 +19,42 @@
     transition: all 0.5s;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.flex-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 body {
     height: 100vh;
     font-family: "Roboto", sans-serif;
     align-items: center;
     justify-content: center;
-    padding: 0 215px;
 }
 
 header {
+    padding: 0 15px;
     width: 100%;
     height: 80px;
     border-bottom: solid 1px #ececec;
-    margin-left: -215px;
-    margin-right: -215px;
-    padding: 0 215px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,6 +82,7 @@ a:focus {
 .header-navigation {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header-contacts a {
@@ -78,16 +100,13 @@ a:focus {
     font-weight: bold;
     font-size: 26px;
     color: #000;
-
-    .footer-logoweb {
-        color: var(--blue-color);
-        font-size: 26px;
-    }
+}
+.logoweb {
+    color: var(--blue-color);
+    font-size: 26px;
 }
 
 .portfolio {
-    width: 1170px;
-    max-width: 1170px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,13 +154,11 @@ a:focus {
 }
 
 .cards {
-    width: 1170px;
-    max-width: 1170px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 27px;
+    gap: 30px;
 }
 
 .portfolio .card {
@@ -150,7 +167,7 @@ a:focus {
     border: solid 1px #eeeeee;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     color: var(--light-text);
 }
@@ -162,7 +179,7 @@ a:focus {
 .card .title {
     width: 322px;
     height: 70px;
-    padding: 20px 24px;
+    padding: 20px 24px 0px 0px;
 }
 .card .title h3 {
     font-size: 18px;
@@ -170,18 +187,15 @@ a:focus {
     color: var(--text-color);
 }
 .card .title p {
-    margin: 20px 0;
     font-size: 16px;
     font-weight: 300;
+    margin-top: 20px;
     color: var(--light-text);
 }
 
 footer {
     height: 252px;
     background-color: var(--bg-color);
-    margin-left: -215px;
-    margin-right: -215px;
-    padding: 0 215px;
     display: flex;
     justify-content: center;
     flex-direction: column;

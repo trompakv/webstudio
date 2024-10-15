@@ -4,41 +4,47 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WebStudio</title>
-        <link rel="stylesheet" href="index.css" />
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         />
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <header>
-            <div class="header-navigation">
-                <span class="header-navigation_logo">
-                    <span class="footer-logoweb">Web</span>Studio</span
-                >
-                <nav>
-                    <ul class="header-navigation_nav-links">
-                        <li><a href="index.html">Студія</a></li>
-                        <li><a href="portfolio.html">Портфоліо</a></li>
-                        <li><a href="#">Контакти</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-contacts">
-                <a href="mailto:example@gmail.com" target="_blank"
-                    >info@devstudio.com</a
-                >
-                <a href="tel:+380961111111" target="_blank">+380961111111</a>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-navigation">
+                    <span class="header-navigation_logo">
+                        <span class="logoweb">Web</span>Studio</span
+                    >
+                    <nav>
+                        <ul class="header-navigation_nav-links">
+                            <li><a href="index.html">Студія</a></li>
+                            <li><a href="portfolio.html">Портфоліо</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-contacts">
+                    <a href="mailto:example@gmail.com" target="_blank"
+                        >info@devstudio.com</a
+                    >
+                    <a href="tel:+380961111111" target="_blank"
+                        >+380961111111</a
+                    >
+                </div>
             </div>
         </header>
 
         <main>
             <section class="main-section1">
-                <h1>Ефективні рішення для вашого бізнесу</h1>
-                <button>Замовити послугу</button>
+                <div class="flex-container">
+                    <h1>Ефективні рішення для вашого бізнесу</h1>
+                    <button>Замовити послугу</button>
+                </div>
             </section>
-            <section class="main-features">
-                <ul>
+            <section class="main-features container">
+                <ul class="container">
                     <li>
                         <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>
@@ -68,7 +74,7 @@
                         </p>
                     </li>
                 </ul>
-                <div class="main-features-wdwd">
+                <div class="main-features-wdwd container">
                     <h2>Чим ми займаємося</h2>
                     <div class="images">
                         <img src="img/main/img1.png" alt="" />
@@ -78,46 +84,68 @@
                 </div>
             </section>
             <section class="main-team">
-                <h2>Наша команда</h2>
-                <ul>
-                    <li>
-                        <img src="img/main/team1.jpg" alt="team" width="250" />
-                        <h5>Ігор Дем'яненко</h5>
-                        <p>Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="img/main/team2.jpg" alt="team" width="250" />
-                        <h5>Ольга Рєпіна</h5>
-                        <p>Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="img/main/team3.jpg" alt="team" width="250" />
-                        <h5>Микола Тарасов</h5>
-                        <p>Marketing</p>
-                    </li>
-                    <li>
-                        <img src="img/main/team4.jpg" alt="team" width="250" />
-                        <h5>Михайло Єрмаков</h5>
-                        <p>UI Designer</p>
-                    </li>
-                </ul>
+                <div class="flex-container">
+                    <h2>Наша команда</h2>
+                    <ul>
+                        <li>
+                            <img
+                                src="img/main/team1.jpg"
+                                alt="team"
+                                width="250"
+                            />
+                            <h5>Ігор Дем'яненко</h5>
+                            <p>Product Designer</p>
+                        </li>
+                        <li>
+                            <img
+                                src="img/main/team2.jpg"
+                                alt="team"
+                                width="250"
+                            />
+                            <h5>Ольга Рєпіна</h5>
+                            <p>Frontend Developer</p>
+                        </li>
+                        <li>
+                            <img
+                                src="img/main/team3.jpg"
+                                alt="team"
+                                width="250"
+                            />
+                            <h5>Микола Тарасов</h5>
+                            <p>Marketing</p>
+                        </li>
+                        <li>
+                            <img
+                                src="img/main/team4.jpg"
+                                alt="team"
+                                width="250"
+                            />
+                            <h5>Михайло Єрмаков</h5>
+                            <p>UI Designer</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
 
         <footer>
-            <span class="footer-logow">
-                <span class="logoweb">Web</span>Studio</span
-            >
-            <address class="footer-adress">
-                <span>м. Київ, пр-т Лесі Українки, 26</span> <br />
-                <br />
-                <a href="mailto:example@gmail.com" target="_blank">
-                    info@devstudio.com
-                </a>
-                <br />
-                <br />
-                <a href="tel:+380961111111" target="_blank">+380961111111</a>
-            </address>
+            <div class="container">
+                <span class="footer-logow">
+                    <span class="logoweb">Web</span>Studio</span
+                >
+                <address class="footer-adress">
+                    <span>м. Київ, пр-т Лесі Українки, 26</span> <br />
+                    <br />
+                    <a href="mailto:example@gmail.com" target="_blank">
+                        info@devstudio.com
+                    </a>
+                    <br />
+                    <br />
+                    <a href="tel:+380961111111" target="_blank"
+                        >+380961111111</a
+                    >
+                </address>
+            </div>
         </footer>
     </body>
 </html>
