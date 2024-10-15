@@ -51,6 +51,8 @@ body {
 }
 
 header {
+    position: fixed;
+    background-color: #fff;
     padding: 0 15px;
     width: 100%;
     height: 80px;
@@ -104,6 +106,10 @@ a:focus {
 .logoweb {
     color: var(--blue-color);
     font-size: 26px;
+}
+
+main {
+    padding-top: 80px;
 }
 
 .portfolio {
