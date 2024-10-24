@@ -162,7 +162,7 @@ main {
 .main-features ul {
     width: 1200px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-direction: row;
     gap: 30px;
@@ -294,4 +294,93 @@ footer address {
         color: var(--blue-color);
         font-size: 26px;
     }
+}
+
+/* ! portfolio page */
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 94px 0;
+}
+
+.filters {
+    margin-bottom: 50px;
+}
+
+.filters button {
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+.filters button:hover {
+    filter: drop-shadow(0px 1px 2px #00000040);
+}
+.filters button:focus {
+    color: #fff;
+    background-color: var(--blue-color);
+    filter: drop-shadow(0px 1px 2px #00000040);
+}
+
+#all {
+    width: 73px;
+}
+#web {
+    width: 125px;
+}
+#addon {
+    width: 112px;
+}
+#design {
+    width: 103px;
+}
+#marketing {
+    width: 130px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio .card {
+    width: 370px;
+    height: 404px;
+    border: solid 1px #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: var(--light-text);
+}
+
+.card img {
+    height: 294px;
+}
+
+.card .title {
+    width: 322px;
+    height: 70px;
+    padding: 20px 24px 0px 0px;
+}
+.card .title h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.card .title p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--light-text);
 }
