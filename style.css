@@ -114,7 +114,8 @@ main {
 
 .main-section1 {
     height: 600px;
-    background: url(./img/main/main-background.png);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(./img/main/main-background.png) fixed;
     color: #fff;
     padding: 0;
     display: flex;
@@ -252,13 +253,14 @@ main {
 
 .main-team ul li {
     width: 270px;
-    height: 368px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     border-radius: 0 0 4px 4px;
+
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
 }
 .main-team ul li img {
     width: 270px;
@@ -376,6 +378,10 @@ footer address {
     justify-content: flex-start;
     flex-direction: column;
     color: var(--light-text);
+}
+
+.card:hover {
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
