@@ -15,7 +15,6 @@
     padding: 0;
     margin: 0;
     font-size: 14px;
-    transition: all 0.5s;
 }
 
 .container {
@@ -87,14 +86,48 @@ a:focus {
     justify-content: center;
 }
 
+.header-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-mail,
+.header-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: var(--light-text);
+    fill: var(--light-text);
+}
+
+.header-mail:hover,
+.header-phone:hover {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+}
+
+.header-mail svg {
+    fill: inherit;
+    width: 16px;
+    height: 12px;
+}
+.header-phone svg {
+    fill: inherit;
+    width: 10px;
+    height: 16px;
+}
+
 .header-contacts a {
-    margin-left: 50px;
     color: var(--light-text);
 }
 
 .header-contacts a:hover,
 .header-contacts a:focus {
-    color: var(--blue-color);
+    color: inherit;
 }
 
 .header-navigation_logo {
@@ -259,6 +292,7 @@ main {
     justify-content: center;
     background-color: #fff;
     border-radius: 0 0 4px 4px;
+    padding-bottom: 43px;
 
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
 }
@@ -274,6 +308,36 @@ main {
 .main-team ul li p {
     color: var(--light-text);
     margin: 10px 0 30px 0;
+}
+
+.team-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.team-links .team-icon {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+
+    fill: #afb1b8;
+
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-links .team-icon:hover {
+    fill: #fff;
+    background: #2196f3;
+}
+
+.team-links .team-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: inherit;
 }
 
 footer {
@@ -297,6 +361,57 @@ footer a:focus {
 
 footer address {
     font-style: normal;
+
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+
+.footer-right {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-right h3 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-icons .footer-icon {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+
+    fill: #fff;
+    background: #ffffff1a;
+
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons .footer-icon:hover {
+    fill: #fff;
+    background: #2196f3;
+}
+
+.footer-icons .footer-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: inherit;
 }
 
 .footer-logow {
