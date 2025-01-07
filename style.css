@@ -340,6 +340,49 @@ main {
     fill: inherit;
 }
 
+.clients {
+    padding: 94px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.clients h2 {
+    font-size: 36px;
+}
+
+.clients-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-brand {
+    border: #afb1b8 1px solid;
+    fill: #afb1b8;
+
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.client-brand:hover {
+    fill: var(--blue-color);
+    border: var(--blue-color) 1px solid;
+}
+
+.client-brand svg {
+    fill: inherit;
+    
+}
+
 footer {
     height: 252px;
     background-color: var(--bg-color);
