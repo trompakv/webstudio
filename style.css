@@ -256,13 +256,35 @@ main {
     gap: 30px;
 }
 
-.main-features-wdwd .images img {
+.main-features-wdwd .images .wdwd-image {
+    position: relative;
+}
+
+.main-features-wdwd .images .wdwd-image img {
     width: 370px;
     height: 294px;
 }
+.main-features-wdwd .images .wdwd-image .wdwd-label {
+    padding: 27px 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    color: #fff;
+    background: #2f303acc;
+    font-weight: 700;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+}
 
 .main-team {
-    height: 648px;
     background-color: #f5f4fa;
     padding: 94px 0px;
     display: flex;
@@ -380,7 +402,6 @@ main {
 
 .client-brand svg {
     fill: inherit;
-    
 }
 
 footer {
