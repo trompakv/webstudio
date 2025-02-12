@@ -1,11 +1,17 @@
-openModalBtn = document.querySelector("[data-modal-open]");
-closeModalBtn = document.querySelector("[data-modal-close]");
-modal = document.querySelector("[data-modal]");
+const openModalBtn = document.querySelector("[data-modal-open]");
+const closeModalBtn = document.querySelector("[data-modal-close]");
+const modal = document.querySelector("[data-modal]");
 
 openModalBtn.addEventListener("click", toggleModal);
 closeModalBtn.addEventListener("click", toggleModal);
 
 function toggleModal() {
-    modal.classList.toggle("is-hidden");
+    if (modal.classList.contains("is-hidden")) {
+        modal.classList.remove("is-hidden");
+        modal.style.opacity = "1";
+    } else {
+        modal.style.opacity = "0";
+        setTimeout(() => modal.classList.add("is-hidden"), 250);
+    }
     document.body.classList.toggle("no-scroll");
 }
