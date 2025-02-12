@@ -227,6 +227,8 @@ a:focus {
 
     align-self: center;
     justify-self: end;
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-send:hover {
@@ -273,7 +275,7 @@ a:focus {
     position: absolute;
     bottom: -32px;
     background: var(--blue-color);
-    transition: all 0.5s;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     opacity: 0;
 }
@@ -308,6 +310,8 @@ a:focus {
 
     color: var(--light-text);
     fill: var(--light-text);
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -383,7 +387,7 @@ main {
     border: none;
     border-radius: 4px;
     outline: none;
-    transition: all 0s;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #fff;
 }
 
@@ -555,6 +559,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-links .team-icon:hover {
@@ -599,6 +605,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-brand:hover {
@@ -680,6 +687,7 @@ footer address {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons .footer-icon:hover {
@@ -797,6 +805,8 @@ footer address {
     color: var(--text-color);
     font-weight: 500;
     margin: 0 2px;
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters button:hover {
@@ -845,6 +855,8 @@ footer address {
     position: relative;
 
     overflow: hidden;
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
@@ -867,7 +879,7 @@ footer address {
     align-items: center;
     justify-content: center;
 
-    transition: transform 0.5s;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .overlay {
