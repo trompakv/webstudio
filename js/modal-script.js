@@ -15,3 +15,12 @@ function toggleModal() {
     }
     document.body.classList.toggle("no-scroll");
 }
+
+const soundPlay = () => {
+    const sounds = document.querySelectorAll(".sound");
+
+    const sound = sounds[Math.floor(Math.random() * sounds.length)];
+
+    sound.currentTime = 0;
+    sound.play();
+};

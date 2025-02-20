@@ -50,11 +50,26 @@
             <section class="main-section1">
                 <div class="flex-container">
                     <h1>Ефективні рішення для вашого бізнесу</h1>
-                    <button data-modal-open>Замовити послугу</button>
+                    <audio class="sound" src="img/icons/goida.mp3"></audio>
+                    <audio
+                        class="sound"
+                        src="img/icons/fart-5-228245.mp3"
+                    ></audio>
+                    <audio
+                        class="sound"
+                        src="img/icons/pulemetnaya-ochered-5-8r.mp3"
+                    ></audio>
+                    <button data-modal-open onclick="soundPlay('button-sound')">
+                        Замовити послугу
+                    </button>
 
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                            <button id="modal-close-btn" data-modal-close>
+                            <button
+                                id="modal-close-btn"
+                                onclick="soundPlay('button-sound')"
+                                data-modal-close
+                            >
                                 <svg>
                                     <use
                                         href="./img/symbol-defs.svg#icon-close"
